@@ -52,5 +52,12 @@ function snakeDraw () {
 }
 
 function snakeUpdate() {
+    var snakeHeadX = snake[0].x;
+    var snakeHeadY = snake[0].y;
     
+    snakeHeadX++;
+    
+    var snakeTail = snake.pop();
+    snakeTail.x = snakeHeadX;
+    snakeTail.y = snakeHeadY;
 }
