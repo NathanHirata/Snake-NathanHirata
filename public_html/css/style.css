@@ -5,3 +5,30 @@ body {
 #game-screen {
     display: block;
 }
+
+#gameOver {
+    position: absolute;
+    visibility: hidden;
+}
+
+h1, h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #cc0000;
+}
+
+
+.title {
+    font-size: 55px;
+    margin-bottom: 0px;
+}
+
+#restartButton {
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#restartButton:hover {
+    background-color: #99ff99;
+}
