@@ -12,6 +12,7 @@ var screenHeight;
 var gameState;
 var gameOverMenu;
 var restartButton;
+var playHUD;
 
 gameInitialize();
 snakeInitialize();
@@ -37,15 +38,19 @@ function gameInitialize() {
     restartButton = document.getElementById("restartButton");
     restartButton.addEventListener("click", gameRestart);
     
+    playHUD = document.getElementById("playHUD");
+    scoreboard = document.getElementById("scoreboard");
+    
     setState("PLAY");
 }
 
 function gameLoop () {
     gameDraw();
+    drawScoreBoard();
     if (gameState == "PLAY"){
-    snakeUpdate();
-    snakeDraw();
-    foodDraw();
+       snakeUpdate();
+       snakeDraw();
+       foodDraw();
     }
 }
 
@@ -57,13 +62,13 @@ function gameDraw() {
 function gameRestart() {
     snakeInitialize();
     foodInitialize();
-    hideMenu("gameOverMenu");
+    hideMenu(gameOverMenu);
     setState("PLAY");
 }
 
 function snakeInitialize() {
     snake = [];
-    snakeLength = 50;
+    snakeLength = 1;
     snakeSize = 17;
     snakeDirection = "down";
     
@@ -86,7 +91,7 @@ function snakeUpdate() {
     var snakeHeadX = snake[0].x;
     var snakeHeadY = snake[0].y;
     
-    if(snakeDirection === "down") {
+    if(snakeDirection == "down") {
         snakeHeadY++;
     }
     else if(snakeDirection == "right") {
@@ -189,9 +194,16 @@ function showMenu(state) {
     if(state == "GAME OVER") {
         displayMenu(gameOverMenu);
     }
+    else if(state == "PLAY") {
+        displayMenu(playHUD);
+    }
 }
 
 function centerMenuPosition(menu) {
     menu.style.top = (screenHeight / 2) - (menu.offsetHeight / 2) + "px";
     menu.style.left = (screenWidth / 2) - (menu.offsetWidth / 2) + "px";
 }
+
+function drawScoreBoard() {
+    scoreboard.innerHTML = snakeLength;
+    }

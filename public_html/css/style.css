@@ -6,17 +6,21 @@ body {
     display: block;
 }
 
-#gameOver {
+#playHUD {
     position: absolute;
     visibility: hidden;
 }
 
-h1, h3 {
+#gameOver{
+    position: absolute;
+    visibility: hidden;
+}
+
+h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     color: #cc0000;
 }
-
 
 .title {
     font-size: 55px;
@@ -32,4 +36,8 @@ h1, h3 {
 
 #restartButton:hover {
     background-color: #99ff99;
+}
+
+#scoreboard {
+    margin: 0px;
 }
