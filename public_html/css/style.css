@@ -11,7 +11,7 @@ body {
     visibility: hidden;
 }
 
-#gameOver{
+#gameOver, #playHUD{
     position: absolute;
     visibility: hidden;
 }
@@ -35,9 +35,20 @@ h1, h2, h3 {
 }
 
 #restartButton:hover {
-    background-color: #99ff99;
+    background-color: white;
 }
 
 #scoreboard {
     margin: 0px;
+}
+
+.color {
+    color: #ffff66;
+}
+
+.titleIndex {
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
 }

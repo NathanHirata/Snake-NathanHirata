@@ -18,7 +18,7 @@ var scoreboard;
 gameInitialize();
 snakeInitialize();
 foodInitialize();
-setInterval(gameLoop, 75);
+setInterval(gameLoop, 50);
 
 
 function gameInitialize() {
@@ -56,7 +56,7 @@ function gameLoop () {
 }
 
 function gameDraw() {
-    context.fillStyle = "rgb(145, 193, 227)";
+    context.fillStyle = "rgb(255, 255, 87)";
     context.fillRect(0 ,0 , screenWidth, screenHeight);
 }
 
@@ -83,7 +83,7 @@ function snakeInitialize() {
 
 function snakeDraw () {
     for(var index = 0; index < snake.length; index++) {
-        context.fillStyle = "orange";
+        context.fillStyle = "blue";
         context.fillRect(snake[index].x * snakeSize, snake[index].y * snakeSize, snakeSize, snakeSize);
     }
 }

@@ -8,11 +8,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <p class="titleIndex">SNAKE</p>
-        <p1>By Nathan Hirata</p1><br/>
-        <a href="easy.html">snake easy</a>
-        <a href="Medium.html">snake medium</a>
-        <a href="Hard.html">snake hard</a>
-        <a href="Impossible.html">snake impossible</a>
+        <section id="playHUD">
+            <h2 id="scoreboard"></h2>
+        </section>
+        
+        <section id="gameOver">
+            <h1 class="title">GAME OVER</h1>
+            <h3 id="restartButton">Restart</h3>
+        </section>
+        
+        <canvas id="game-screen"></canvas>
+        
+        <script src="js/Snake easy.js"></script>
     </body>
 </html>
