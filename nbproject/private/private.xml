@@ -4,8 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/index.html</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/Impossible.html</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/Easy.html</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/Hard.html</file>
             <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/js/snake.js</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/js/snake%20impossible.js</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/Medium.html</file>
             <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/js/Snake%20easy.js</file>
+            <file>file:/C:/xampp/htdocs/HirataN%20-%20Snake/public_html/js/snake%20hard.js</file>
         </group>
     </open-files>
 </project-private>

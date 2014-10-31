@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 #game-screen {
     display: block;
@@ -51,4 +52,51 @@ h1, h2, h3 {
     text-align: center;
     font-size: 50px;
     font-style: italic;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#slug {
+    color: orange;
+    background-color: #91c1e3;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+#slug:hover {
+    background-color: white;
+}
+
+#worm {
+    color: blue;
+    background-color: #ffff57;
+    margin-top: 20px;
+}
+
+#worm:hover {
+    background-color: white;
+}
+
+#seaSnake {
+    color: #000000;
+    background-color: #ff0000;
+    margin-top: 20px;
+}
+
+#seaSnake:hover {
+    background-color: white;
+}
+
+#blackMamba {
+    color: white;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+#blackMamba:hover {
+    background-color: red;
 }

@@ -18,7 +18,7 @@ var scoreboard;
 gameInitialize();
 snakeInitialize();
 foodInitialize();
-setInterval(gameLoop, 25);
+setInterval(gameLoop, 30);
 
 
 function gameInitialize() {
