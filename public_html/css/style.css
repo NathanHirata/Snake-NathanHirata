@@ -53,13 +53,13 @@ h1, h2, h3 {
     font-size: 50px;
     font-style: italic;
 }
-
+/* This is my "By nathan hirata" edit */
 .p1 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
-
+/* these are my difficulty tabs */
 #slug {
     color: orange;
     background-color: #91c1e3;

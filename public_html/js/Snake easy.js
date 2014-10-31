@@ -159,6 +159,7 @@ function checkFoodCollisions(snakeHeadX, snakeHeadY) {
             x: 0,
             y: 0
         }); 
+        snakeLength++;
         setFoodPosition();
     }
 }

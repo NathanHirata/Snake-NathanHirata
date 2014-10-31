@@ -1,3 +1,4 @@
+/*my global variables*/
 var snake;
 var snakeLength;
 var snakeSize;
@@ -158,7 +159,8 @@ function checkFoodCollisions(snakeHeadX, snakeHeadY) {
         snake.push({
             x: 0,
             y: 0
-        }); 
+        });
+        snakeLength++;
         setFoodPosition();
     }
 }
